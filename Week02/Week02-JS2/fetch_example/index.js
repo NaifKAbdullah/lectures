@@ -8,7 +8,7 @@ if (DO_IMPERATIVE) {
     console.log("Doing operations IMPERATIVELY...")
     fetch('https://cs571.org/s23/week2/api/cole', {
         headers: {
-            "X-CS571-ID": "bid_00000000000000000000"
+            "X-CS571-ID": "bid_d5c08b0afa0995d6bda3"
         }
     })
     .then(res => {
