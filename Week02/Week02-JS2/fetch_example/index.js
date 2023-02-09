@@ -21,12 +21,12 @@ if (DO_IMPERATIVE) {
         
         document.getElementById('person-name').textContent = data.name
         
-        console.log("Favorite colors...");
+        console.log("Favorite colors..."); // Traversing an array
         for (const color of data.favColors) {
             console.log(color)
         }
 
-        console.log("Semesters with more than 15 credits...");
+        console.log("Semesters with more than 15 credits..."); // Check slide 37 in Week02-js2
         for (const sem of data.creditHistory) {
             if(sem.cred > 15) {
                 console.log(sem.semester)
@@ -36,7 +36,7 @@ if (DO_IMPERATIVE) {
         // Note: THIS IS AN OBJECT.
         const plants = data.plants;
         let alivePlants = [];
-        for (const plant in plants) {
+        for (const plant in plants) { // You ue "in" for json objects.
             if(plants[plant].alive) {
                 alivePlants.push(plant);
             }
